@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>WeatherBoy Weatherapp</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6257/6257017.png"
+          alt="Weatherman icon"
+        />
+        <!-- <a
+          href="https://www.flaticon.com/free-icons/weatherman"
+          title="weatherman icons"
+          >Weatherman icons created by Smashicons - Flaticon</a
+        > -->
+      </div>
+      <div class="title">
+        <h1>WeatherBoy</h1>
+      </div>
+      <div class="search-bar">
+        <span class="error-container"></span>
+        <form action="">
+          <input id="form-data" type="text" placeholder="Search.." required />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <main>
+      <div class="container_current-weather">
+        <div class="container-current-weather-info">
+          <div class="current-weather-info-main">
+            <h1 class="title-info-main">Current Weather</h1>
+            <h2 id="current-city">London</h2>
+            <div class="container_current-temp">
+              <span id="current-temperature">23</span>
+              <span class="temperature-unit">&#x2103;</span>
+            </div>
+            <h2 class="current-weather-condition">Weather Condition:</h2>
+            <h2 class="current-weather-data">Cloudy</h2>
+            <label class="switch">
+              <input id="temperature-selector" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="current-weather-info-secondary">
+            <h1 id="daily-info-title">Daily Info</h1>
+            <h2 class="daily-high">
+              High: <span id="daily-high">28</span>
+              <span class="temperature-unit">&#x2103;</span>
+            </h2>
+            <h2 class="daily-low">
+              Low: <span id="daily-low">15</span>
+              <span class="temperature-unit">&#x2103;</span>
+            </h2>
+            <h2 class="current-time">
+              Time: <span id="current-time-data">10:45</span>
+            </h2>
+            <h2 class="daily-low">
+              Sunrise: <span id="sunrise-data">6:45</span>
+            </h2>
+            <h2 class="daily-low">
+              Sunset: <span id="sunset-data">7:15 </span>
+            </h2>
+          </div>
+        </div>
+        <div class="container_current-weather-tertiary">
+          <h2 class="tertiary-title">Other Information</h2>
+          <div class="other-information">
+            <p class="wind-container">
+              Wind Speed: <span id="wind-data">7</span>
+              <span id="wind-measure">metre/second</span>
+            </p>
+            <p class="cloud-container">
+              % Cloudy: <span id="cloud-data">19</span>%
+            </p>
+            <p class="rain-container">
+              Chance of Rain: <span id="rain-data">19</span>%
+            </p>
+            <p class="humidity-container">
+              Humidity: <span id="humidity-data">54</span>%
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container_hourly-weather">
+        <div class="title_hourly-weather">
+          <h1>Hourly Weather</h1>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
